@@ -55,7 +55,7 @@
 
         PrintL {
             bindings = <
-&kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp ENTER
+&kp KP_NUMBER_7  &kp KP_NUMBER_8  &to 0
 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
             >;
@@ -65,7 +65,7 @@
 
         CMR {
             bindings = <
-&kp TAB           &kp LEFT_SHIFT    &kp ENTER
+&kp TAB           &kp LEFT_SHIFT    &to 0
 &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(N7)
 &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)
             >;
