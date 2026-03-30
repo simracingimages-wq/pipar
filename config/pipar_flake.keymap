@@ -21,22 +21,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            // ---------------------------//
-            // | Q    | W     | ENCODER | //
-            // | A    | S     | D       | //
-            // | Z    | X     | FN      | //
-
-            display-name = "default";
-            bindings = <
-&kp TAB         &kp LEFT_WIN    &to 1
-&kp BACKSPACE   &kp UP_ARROW    &kp ENTER
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-        };
-
         function_layer {
             // --------------------------- //
             // | BT_CLR | none | ENCODER | //
@@ -45,7 +29,7 @@
 
             display-name = "function";
             bindings = <
-&bt BT_CLR    &none         &to 2
+&bt BT_CLR    &none         &to 0
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
 &bt BT_SEL 3  &bt BT_SEL 4  &trans
             >;
@@ -53,12 +37,40 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        layer_2 {
+        default_layer {
+            // ---------------------------//
+            // | Q    | W     | ENCODER | //
+            // | A    | S     | D       | //
+            // | Z    | X     | FN      | //
+
+            display-name = "default";
             bindings = <
-&kp C_PAUSE  &kp PRINTSCREEN  &to 0
-&kp INS      &kp HOME         &kp LC(C)
-&kp DELETE   &kp END          &kp LC(V)
+&kp TAB         &kp LEFT_WIN    &to 0
+&kp BACKSPACE   &kp UP_ARROW    &kp ENTER
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        PrintL {
+            bindings = <
+&kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp ENTER
+&kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+            >;
+
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+        };
+
+        CMR {
+            bindings = <
+&kp TAB           &kp LEFT_SHIFT    &kp ENTER
+&kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(N7)
+&kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)
+            >;
+
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
     };
 };
