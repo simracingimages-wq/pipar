@@ -56,8 +56,8 @@
         PrintL {
             bindings = <
 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &to 3
-&kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+&kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp LEFT_COMMAND
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
