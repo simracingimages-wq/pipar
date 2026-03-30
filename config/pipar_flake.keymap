@@ -29,7 +29,7 @@
 
             display-name = "function";
             bindings = <
-&bt BT_CLR    &none         &to 0
+&bt BT_CLR    &none         &to 2
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
 &bt BT_SEL 3  &bt BT_SEL 4  &trans
             >;
@@ -55,7 +55,7 @@
 
         PrintL {
             bindings = <
-&kp KP_NUMBER_7  &kp KP_NUMBER_8  &to 0
+&kp KP_NUMBER_7  &kp KP_NUMBER_8  &to 3
 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
             >;
